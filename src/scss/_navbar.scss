@@ -10,7 +10,7 @@
 }
 
 .nav-item {
-    background-color: $navbar-bg;
+    background-color: $navbar-elements-bg;
     font-family: $font-family-sans-serif;
     font-size: .9rem;
     line-height: .975;
@@ -44,7 +44,7 @@
     }
 
     .nav-item {
-        background-color: $navbar-bg;
+        background-color: $navbar-elements-bg;
         width: 16.66%;
         height: 7rem;
         font-family: $font-family-sans-serif;
@@ -81,12 +81,18 @@
         left: unset;
         width: 3rem;
         height: 3rem;
+        cursor: pointer;
     }
     
     .carousel-control-next {
         right: unset;
         width: 3rem;
         height: 3rem;
+        cursor: pointer;
+    }
+
+    .material-icons.md-dark { 
+        color: $header-carousel-navigation; 
     }
 
 }
