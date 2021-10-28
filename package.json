@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "staging": "NODE_ENV=staging mix",
+        "prod": "mix --production",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.10",
+        "laravel-mix-jigsaw": "^1.5.0",
+        "postcss": "^8.2.4",
+        "postcss-import": "^14.0.0",
+        "sass": "1.25.0",
+        "sass-loader": "7.1.0",
+        "node-sass": "^4.0.0",
+        "cross-env": "^7.0.3"
+    },
+    "dependencies": {
+        "bootstrap": "4.3.1",
+        "jquery": "^3.5.1",
+        "popper.js": "1.16.1"
+    }
+}
