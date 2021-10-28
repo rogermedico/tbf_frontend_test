@@ -25,9 +25,9 @@
 
 
 @include media-breakpoint-up(lg){
-.navbar {
-    position:initial;
-}
+    .navbar {
+        position:initial;
+    }
 
     .nav {
         flex-wrap: nowrap;
@@ -48,6 +48,7 @@
     }
 
     .nav-item:hover {
+        right: 0;
         top: -10px;
     }
 
