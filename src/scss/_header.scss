@@ -1,0 +1,20 @@
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $font-family-serif;
+    font-size: 1.3rem;
+}
+
+@include media-breakpoint-up(md){
+    .carousel-caption {
+        font-size: 1.8rem;
+    }
+
+}
+
+@include media-breakpoint-up(lg){
+    .carousel-caption {
+        font-size: 2.3rem;
+    }
+
+}

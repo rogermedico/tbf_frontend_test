@@ -1,5 +1,6 @@
 .navbar {
     position:absolute;
+    z-index: 10;
     top: 1rem;
     left: 2rem;
 }
@@ -7,6 +8,7 @@
 .nav {
     flex-direction: column;
     width: 50%;
+    border-radius: .25rem;
 }
 
 .nav-item {
@@ -27,6 +29,14 @@
     display: none;
 }
 
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-navbar .navbar-toggler {
+    border-color: $navbar-breadcrumb;
+} 
+
 @include media-breakpoint-up(lg){
     .navbar-container {
         position:relative;
@@ -41,6 +51,7 @@
         flex-wrap: nowrap;
         flex-direction: initial;
         width: initial;
+        border-radius: initial;
     }
 
     .nav-item {
@@ -91,8 +102,12 @@
         cursor: pointer;
     }
 
-    .material-icons.md-dark { 
+    .header-carousel-navigation-color { 
         color: $header-carousel-navigation; 
+    }
+
+    .navbar-breadcrumb-color { 
+        color: $navbar-breadcrumb; 
     }
 
 }
