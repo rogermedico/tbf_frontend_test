@@ -1,20 +1,54 @@
+.navbar {
+    position:absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
 .nav {
-    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 50%;
 }
 
 .nav-item {
     background-color: $navbar-bg;
-    width: 16.66%;
-    height: 7rem;
     font-family: $font-family-sans-serif;
     font-size: .9rem;
     line-height: .975;
     position: relative;
-    top: 0;
-    transition: top ease .25s;
-
+    right: 0;
+    transition: right ease .25s;
 }
 
 .nav-item:hover {
-    top: -10px;
+    right: -5px;
+}
+
+
+@include media-breakpoint-up(lg){
+.navbar {
+    position:initial;
+}
+
+    .nav {
+        flex-wrap: nowrap;
+        flex-direction: initial;
+        width: initial;
+    }
+
+    .nav-item {
+        background-color: $navbar-bg;
+        width: 16.66%;
+        height: 7rem;
+        font-family: $font-family-sans-serif;
+        font-size: .9rem;
+        line-height: .975;
+        position: relative;
+        top: 0;
+        transition: top ease .25s;
+    }
+
+    .nav-item:hover {
+        top: -10px;
+    }
+
 }
