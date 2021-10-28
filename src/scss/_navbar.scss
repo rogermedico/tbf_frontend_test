@@ -23,8 +23,16 @@
     right: -5px;
 }
 
+.carousel-control-container {
+    display: none;
+}
 
 @include media-breakpoint-up(lg){
+    .navbar-container {
+        position:relative;
+        top: -100px;
+    }
+
     .navbar {
         position:initial;
     }
@@ -50,6 +58,35 @@
     .nav-item:hover {
         right: 0;
         top: -10px;
+    }
+
+    .carousel-control-container {
+        display: inherit;
+        text-align: right;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: inline-block;
+        position:unset;
+        top:unset;
+        bottom: -10px;
+        width: unset;
+        opacity: unset;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .carousel-control-prev {    
+        left: unset;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .carousel-control-next {
+        right: unset;
+        width: 3rem;
+        height: 3rem;
     }
 
 }
